@@ -1,0 +1,39 @@
+html{
+    min-height: 100%;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+}
+
+#app{
+    height: 100%;
+}
+
+#tableTitle {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    justify-content: center;
+    margin:auto;
+}
+
+.flex-center{
+    display: flex;
+    align-content: center;
+}
+
+#tableContent{
+    margin: auto;
+    height: 100%;
+
+}
+
+#productsTable {
+    margin: auto;
+    text-align: center;
+}
