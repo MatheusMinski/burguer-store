@@ -1,5 +1,9 @@
 <?php
-@include('../configs/app.php');
+namespace database;
+
+use mysqli;
+
+//require_once('./configs/app.php');
 
 class Connect
 {
@@ -7,12 +11,20 @@ class Connect
     public function __construct()
     {
         $this->connection = new mysqli(
+            '127.0.0.1',
+            'root',
+            'strong_password',
+            'burguer-store',
+            3307
+        );
+
+        /**$this->connection = new mysqli(
             getenv('DB_HOST'),
             getenv('DB_USERNAME'),
             getenv('DB_PASSWORD'),
             getenv('DB_NAME'),
-            (int) getenv('DB_PORT')
-        );
+            getenv('DB_PORT'),
+        );*/
     }
 
     public function getConnection(): mysqli
